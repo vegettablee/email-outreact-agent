@@ -38,6 +38,7 @@ linkedin text,
 foreign key (email) references emails(email)
 );
 
+
 -- Workflow Order:
 -- Create the company
 -- Create the email (linked to the company)

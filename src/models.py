@@ -1,0 +1,1 @@
+# models that mimic the ddl script, making it easier for insertions and other functionality because it is enforced 
