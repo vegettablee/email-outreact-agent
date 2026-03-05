@@ -60,37 +60,7 @@ Main components
 - rate limiting 
 
 
-# Current Part in Progress
-
-Instead of using an in-house scraper, use manual gemini pro thinking mode to return structured json based on a concentrated scraping scope/target(1-5 compannies at a time). 
-
-JSON will mimic the fields in the DDL script look like for each separate entity and will always follow the same order: 
-
-[
-  {
-  company : { Object }, 
-  emails : [{ Object }], 
-  recruiters : [{ Object }], 
-  jobs : [{ Object }]
- }
-]
-
-Scraping rule guidelines: 
-- IF company has information, find any non-recruiter company-tied emails first, these include: 
-- 1. careers@ / hiring@ — most direct for job-related contact.
-- 2. hr@ / people@ / talent@ — human gatekeepers who route internally.
-- 3. Named leadership (CEO/Founder at smaller companies).
-- 4. hello@ / info@ — catch-alls, lower deliverability but still valid.
-- Continue to recruiters, look for emails tied to the 
-- If a company lacks information, then look for at least one company-related email, but no emails/recruiters.
-
-
-These rules apply to all entities besides company, and are the rules for returning JSON after scraping, in any case any of these rule are violated, return the entities affected as blank JSON with(ex. no recruiters found, return recruiters : [{ }]): 
-- Recruiters must have an email or linkedin. 
-- Open roles that qualify apply only to software related roles. 
-
-
-
+# Current Part in Progress: Cleaning data.json file and adding to the DB before email agent workflow
 
 Emails can be tied to the company directly or tied directly to a recruiter, who is then tied to the company. There are some important scenarios that should be considered to prevent collisions/invalid insertions, these include: 
 - A company MUST exist before an email or recruiter is added to the DB 

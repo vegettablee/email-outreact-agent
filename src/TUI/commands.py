@@ -12,6 +12,7 @@ class CommandHandler:
             "stats": self.show_stats,
             "find_emails": self.find_emails,
             "send_emails": self.send_emails,
+            "clean_raw_data" : self.clean_raw_data,
             "help": self.show_help,
         }
 
@@ -61,6 +62,9 @@ class CommandHandler:
         console.print("\n[bold]Company Statistics:[/bold]")
         console.print("  Companies researched: 0")
         console.print("  Contacts found: 0\n")
+    
+    def clean_raw_data(self, args): # cleans the data.json file, validates the files before starting the email automation workflow 
+        console.print("Cleaning data.json file and inserting into DB...")
 
     def find_emails(self, args):
         """Research companies and find recruiter emails."""
@@ -80,7 +84,7 @@ class CommandHandler:
         # TODO: Call email agent workflow
         # from src.agents.email_agent import send_email_workflow
         # result = send_email_workflow(args)
-
+        
         console.print("[yellow]Note: Email workflow not yet implemented[/yellow]")
         console.print(f"[dim]Args received: {args}[/dim]\n")
 

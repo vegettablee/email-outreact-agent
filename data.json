@@ -1,0 +1,90 @@
+[
+{
+"company": {
+"cname": "Motivity Labs Inc.",
+"company_size": "450 - 1,200",
+"category": "IT Services & IT Consulting",
+"company_city": "Irving",
+"company_state": "Texas",
+"company_description": "Motivity Labs is a global digital engineering firm providing 'Innovation as a Service' through cloud-native architectures, generative AI, and full-lifecycle product engineering.",
+"contact_status": "N/A"
+},
+"emails": [
+{
+"email": "careers@motivitylabs.com",
+"num_sent": 0,
+"num_replied": 0,
+"template_id": null,
+"last_date_sent": null,
+"contact_status": "N/A"
+},
+{
+"email": "info@motivitylabs.com",
+"num_sent": 0,
+"num_replied": 0,
+"template_id": null,
+"last_date_sent": null,
+"contact_status": "N/A"
+}
+],
+"recruiters": [
+{
+"fname": "Sireesha",
+"lname": "Vemula",
+"linkedin": "Unknown",
+"recruiter_emails": [
+{
+"email": "sireesha.vemula@motivitylabs.com"
+}
+]
+},
+{
+"fname": "Dikshith",
+"lname": "Nalapatla",
+"linkedin": "Unknown",
+"recruiter_emails": [
+{
+"email": "dikshith.nalapatla@motivitylabs.com"
+}
+]
+}
+],
+"jobs": [
+{
+"role_name": "Senior AI/ML & Gen AI Engineer",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+},
+{
+"role_name": "Senior Data Engineer",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+},
+{
+"role_name": "Technical Solution Architect",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+},
+{
+"role_name": "JAVA Technical Lead",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+},
+{
+"role_name": "DevOps Engineer",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+},
+{
+"role_name": "SQL Developer",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+},
+{
+"role_name": "Python Developer",
+"source_url": "https://motivitylabs.com/job-openings/",
+"is_open": true
+}
+]
+}
+]
